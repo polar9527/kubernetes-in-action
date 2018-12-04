@@ -13,5 +13,5 @@ spec:
         app: kubia
     spec:
       containers:
-      - name: kubia
-        image: luksa/kubia
+        - name: kubia
+          image: polar9527/kubia
