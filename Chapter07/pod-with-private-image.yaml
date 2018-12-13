@@ -4,8 +4,10 @@ metadata:
   name: private-pod
 spec:
   imagePullSecrets:
-  - name: mydockerhubsecret
+    - name: mydockerhubsecret
   containers:
-  - image: username/private:tag
-    name: main
-
+    - image: polar9527/test:hello
+      name: main
+      ports:
+        - containerPort: 8080
+          protocol: TCP
